@@ -136,7 +136,7 @@ class MediaWiki
   
     protected
     def get_xml(url)
-      Hpricot.XML(open(url))
+      Hpricot.XML(open(url, 'User-Agent' => ''))
     end
   end
 
